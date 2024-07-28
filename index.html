@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <style>
+    html, body {width: auto!important; overflow-x: hidden!important} 
     .container {
       margin-top: 20px;
       width: 100%;
@@ -30,7 +31,7 @@
 
     .gallery a {
       display: block;
-      width: 400px;
+      width: 100%;
       height: 600px;
       overflow: hidden;
       position: relative;
@@ -46,7 +47,8 @@
       transform: translate(-50%, -50%);
     }
     .video-container {
-      margin-top: 20px;
+      margin-left:auto;
+      margin-right:auto;
     }
     .full-height{
       overflow: inherit;
@@ -135,15 +137,15 @@
         </div>
       </div>
       <br>
-      <div class="video-container center-align full-height bold">
-        <h5>Βίντεο</h5>
+      <div class="video-container center-align full-height">
+        <h5 class="bold">Βίντεο</h5>
         <!-- <div class="video-wrapper">
           <iframe width="560" height="315" src="images/video.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> -->
 
-        <video  class="vert_video" width="480" height="720" controls>
+        <video  class="vert_video" width="360" height="720" controls>
           <source src="images/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+            Your browser does not support the video tag.
         </video>
       </div>
   </div>
